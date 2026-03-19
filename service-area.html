@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Area | Land2Sea Detailing Winnipeg</title>
+    <meta name="description" content="Land2Sea Detailing serves Winnipeg, St. Adolphe, and Île-des-Chênes. We come to you — mobile detailing at your home or workplace." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://land2seadetailing.com/service-area.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Service Area | Land2Sea Detailing" />
+    <meta property="og:description" content="We serve Winnipeg, St. Adolphe, and Île-des-Chênes. Mobile detailing — we come to you." />
+    <meta property="og:url" content="https://land2seadetailing.com/service-area.html" />
+    <meta property="og:image" content="https://land2seadetailing.com/images/hero.webp" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script src="js/main.js" defer></script>
+    <!-- Google Analytics GA4 — replace G-XXXXXXXXXX with your Measurement ID from analytics.google.com -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+  </head>
+  <body class="bg-slate-900 text-white">
+    <!-- Promo Banner -->
+    <div id="promoBanner" class="promo-banner text-white text-xs md:text-sm font-bold uppercase tracking-widest text-center py-2 px-12 relative">
+      <span>&#127774; Spring Special — Book any Full Detail and save $20. Limited spots. <a href="book.html" class="underline ml-1">Book Now</a></span>
+      <button onclick="dismissPromo()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition text-xl leading-none" aria-label="Close">&times;</button>
+    </div>
+    <script>if(localStorage.getItem('promoDismissed'))document.getElementById('promoBanner').style.display='none';function dismissPromo(){document.getElementById('promoBanner').style.display='none';localStorage.setItem('promoDismissed','1');}</script>
+
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="font-black text-2xl tracking-tighter text-white">
+            <span class="text-blue-500">LAND<span class="accent-orange">2</span>SEA</span> DETAILING
+          </a>
+          <div class="hidden md:flex space-x-8 items-center">
+            <a href="index.html" class="text-white hover:text-orange-500 font-bold text-sm uppercase transition">Home</a>
+            <a href="about.html" class="text-white hover:text-orange-500 font-bold text-sm uppercase transition">About Us</a>
+            <a href="packages.html" class="text-white hover:text-orange-500 font-bold text-sm uppercase transition">Packages</a>
+            <a href="correction.html" class="text-white hover:text-orange-500 font-bold text-sm uppercase transition">Correction</a>
+            <a href="book.html" class="btn-shine bg-orange-600 hover:bg-orange-500 text-white px-6 py-2 rounded-full font-bold uppercase text-xs tracking-wider shadow-lg shadow-orange-500/30 transition transform hover:scale-105">Book Now</a>
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-white focus:outline-none p-2">
+              <div id="hamburger-icon" class="w-6 h-6 flex flex-col justify-between relative">
+                <span class="hamburger-line line-1 block w-full h-0.5 bg-white"></span>
+                <span class="hamburger-line line-2 block w-full h-0.5 bg-white"></span>
+                <span class="hamburger-line line-3 block w-full h-0.5 bg-white"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu md:hidden bg-slate-900 border-t border-slate-800">
+        <div class="flex flex-col p-4 space-y-2">
+          <a href="index.html" class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition">Home</a>
+          <a href="about.html" class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition">About Us</a>
+          <a href="packages.html" class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition">Detailing Packages</a>
+          <a href="correction.html" class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition">Paint Correction</a>
+          <a href="book.html" class="block py-3 px-4 rounded-lg text-sm font-bold text-white bg-orange-600 text-center mt-4 shadow-lg active:scale-95 transition">Book Now</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="pt-40 pb-12 bg-slate-950 border-b border-slate-800 text-center">
+      <p class="text-orange-500 font-bold text-xs uppercase tracking-[0.5em] mb-3">We Come To You</p>
+      <h1 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-4">Service <span class="text-orange-500">Area</span></h1>
+      <div class="w-16 h-1 bg-orange-500 mx-auto mt-2"></div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-16">
+
+      <!-- Area Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div class="reveal bg-slate-800/50 border border-slate-700 hover:border-orange-500/50 rounded-2xl p-8 text-center transition group">
+          <div class="w-14 h-14 rounded-full bg-orange-500/10 group-hover:bg-orange-500/20 flex items-center justify-center mx-auto mb-4 transition">
+            <i class="fas fa-city text-orange-500 text-2xl"></i>
+          </div>
+          <h2 class="font-black text-xl uppercase tracking-tight mb-2">Winnipeg</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">All Winnipeg neighbourhoods. North End, South Winnipeg, St. Vital, Transcona, West End, and everywhere in between.</p>
+        </div>
+
+        <div class="reveal delay-100 bg-slate-800/50 border border-slate-700 hover:border-blue-500/50 rounded-2xl p-8 text-center transition group">
+          <div class="w-14 h-14 rounded-full bg-blue-500/10 group-hover:bg-blue-500/20 flex items-center justify-center mx-auto mb-4 transition">
+            <i class="fas fa-map-pin text-blue-500 text-2xl"></i>
+          </div>
+          <h2 class="font-black text-xl uppercase tracking-tight mb-2">St. Adolphe</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">Just south of Winnipeg. We make regular runs to St. Adolphe — book ahead to lock in your spot.</p>
+        </div>
+
+        <div class="reveal delay-200 bg-slate-800/50 border border-slate-700 hover:border-orange-500/50 rounded-2xl p-8 text-center transition group">
+          <div class="w-14 h-14 rounded-full bg-orange-500/10 group-hover:bg-orange-500/20 flex items-center justify-center mx-auto mb-4 transition">
+            <i class="fas fa-map-pin text-orange-500 text-2xl"></i>
+          </div>
+          <h2 class="font-black text-xl uppercase tracking-tight mb-2">Île-des-Chênes</h2>
+          <p class="text-gray-400 text-sm leading-relaxed">We serve Île-des-Chênes as part of our south-area run. Mention your location when booking.</p>
+        </div>
+      </div>
+
+      <!-- How It Works -->
+      <div class="bg-slate-950 border border-slate-800 rounded-3xl p-8 md:p-12 mb-16 reveal">
+        <h2 class="text-3xl font-black uppercase italic tracking-tighter text-center mb-10">How It Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-5xl font-black text-orange-500/20 mb-3">01</div>
+            <h3 class="font-black uppercase tracking-tight text-lg mb-2">You Book</h3>
+            <p class="text-gray-400 text-sm">Fill out the quote form or call/text us with your location, vehicle, and service.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-black text-orange-500/20 mb-3">02</div>
+            <h3 class="font-black uppercase tracking-tight text-lg mb-2">We Come to You</h3>
+            <p class="text-gray-400 text-sm">At your home, workplace, or wherever your car is parked. No drop-off required.</p>
+          </div>
+          <div class="text-center">
+            <div class="text-5xl font-black text-orange-500/20 mb-3">03</div>
+            <h3 class="font-black uppercase tracking-tight text-lg mb-2">Drive Away Clean</h3>
+            <p class="text-gray-400 text-sm">We handle everything and leave your ride looking its best. Zero hassle.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="reveal">
+        <h2 class="text-2xl font-black uppercase italic tracking-tighter text-center mb-6">Our Coverage Zone</h2>
+        <div class="relative w-full h-[450px] rounded-3xl p-[2px] bg-gradient-to-r from-orange-600 via-amber-500 to-blue-600 shadow-[0_0_30px_rgba(249,115,22,0.15)]">
+          <div class="w-full h-full rounded-[22px] overflow-hidden bg-slate-900 dark-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164545.549221198!2d-97.2913165768508!3d49.88006371511211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42ea782359141697%3A0xac230787e97f0435!2sWinnipeg%2C%20MB!5e0!3m2!1sen!2sca!4v1710000000000!5m2!1sen!2sca"
+              class="w-full h-full"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <p class="text-center text-gray-500 text-sm mt-4">Not sure if we cover your area? <a href="tel:2045581791" class="text-orange-500 hover:underline">Give us a call</a> — we're happy to work something out.</p>
+      </div>
+
+      <div class="text-center mt-16">
+        <a href="book.html" class="btn-shine bg-orange-600 hover:bg-orange-500 text-white px-10 py-4 rounded-full font-bold uppercase tracking-wider shadow-lg shadow-orange-500/30 transition transform hover:scale-105 inline-block">
+          <i class="fas fa-calendar-check mr-2"></i>Book Your Detail
+        </a>
+      </div>
+
+    </main>
+
+    <footer class="bg-slate-950 py-10 border-t border-slate-900 text-center">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="font-black text-2xl tracking-tighter text-white mb-4">
+          <span class="text-blue-500">LAND<span class="accent-orange">2</span>SEA</span> DETAILING
+        </div>
+        <div class="flex justify-center space-x-8 mb-8">
+          <a href="https://www.facebook.com/land2sea.detailing" target="_blank" class="text-gray-500 hover:text-blue-500 text-2xl transition"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/land2sea.detailing" target="_blank" class="text-gray-500 hover:text-orange-500 text-2xl transition"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="flex justify-center gap-6 text-xs text-gray-600 mb-4">
+          <a href="privacy.html" class="hover:text-gray-400 transition">Privacy Policy</a>
+          <a href="faq.html" class="hover:text-gray-400 transition">FAQ</a>
+          <a href="service-area.html" class="hover:text-gray-400 transition">Service Area</a>
+        </div>
+        <p class="text-gray-600 text-sm">© 2026 Land2Sea Detailing. Winnipeg, MB.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Book Button -->
+    <a href="book.html" class="float-btn bg-orange-600 hover:bg-orange-500 text-white px-5 py-3 rounded-full font-bold uppercase text-xs tracking-wider shadow-xl shadow-orange-500/40 flex items-center gap-2 transition">
+      <i class="fas fa-calendar-check"></i> Book Now
+    </a>
+    <script>(function(){var fb=document.querySelector('.float-btn');if(fb)window.addEventListener('scroll',function(){fb.classList.toggle('visible',window.scrollY>300);});})();</script>
+  </body>
+</html>

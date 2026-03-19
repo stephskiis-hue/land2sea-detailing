@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailing Packages | Land2Sea Winnipeg</title>
+    <meta name="description" content="Land2Sea Detailing packages — Gold Wash ($100+), Decon Wash ($115+), Basic Detail ($120+), and Full L2S Package ($320+). Serving Winnipeg, St. Adolphe & Île-des-Chênes." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://land2seadetailing.com/packages.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Detailing Packages | Land2Sea Winnipeg" />
+    <meta property="og:description" content="From a Gold Wash to the full L2S Detail Package — we have a service for every vehicle and every budget." />
+    <meta property="og:url" content="https://land2seadetailing.com/packages.html" />
+    <meta property="og:image" content="https://land2seadetailing.com/images/interior.webp" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  <script src="js/main.js" defer></script>
+  <!-- Google Analytics GA4 — replace G-XXXXXXXXXX with your Measurement ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+</head>
+  <body class="bg-slate-900 text-white">
+    <!-- Promo Banner -->
+    <div id="promoBanner" class="promo-banner text-white text-xs md:text-sm font-bold uppercase tracking-widest text-center py-2 px-12 relative">
+      <span>&#127774; Spring Special — Book any Full Detail and save $20. Limited spots. <a href="book.html" class="underline ml-1">Book Now</a></span>
+      <button onclick="dismissPromo()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition text-xl leading-none" aria-label="Close">&times;</button>
+    </div>
+    <script>if(localStorage.getItem('promoDismissed'))document.getElementById('promoBanner').style.display='none';function dismissPromo(){document.getElementById('promoBanner').style.display='none';localStorage.setItem('promoDismissed','1');}</script>
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-20">
+          <a
+            href="index.html"
+            class="font-black text-2xl tracking-tighter text-white"
+          >
+            <span class="text-blue-500"
+              >LAND<span class="accent-orange">2</span>SEA</span
+            >
+            DETAILING
+          </a>
+
+          <div class="hidden md:flex space-x-8 items-center">
+            <a
+              href="index.html"
+              class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
+              >About Us</a
+            >
+            <a
+              href="packages.html"
+              class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
+              >Packages</a
+            >
+            <a
+              href="correction.html"
+              class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
+              >Correction</a
+            >
+            <a
+              href="book.html"
+              class="btn-shine bg-orange-600 hover:bg-orange-500 text-white px-6 py-2 rounded-full font-bold uppercase text-xs tracking-wider shadow-lg shadow-orange-500/30 transition transform hover:scale-105"
+              >Book Now</a
+            >
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-white focus:outline-none p-2"
+            >
+              <div
+                id="hamburger-icon"
+                class="w-6 h-6 flex flex-col justify-between relative"
+              >
+                <span
+                  class="hamburger-line line-1 block w-full h-0.5 bg-white"
+                ></span>
+                <span
+                  class="hamburger-line line-2 block w-full h-0.5 bg-white"
+                ></span>
+                <span
+                  class="hamburger-line line-3 block w-full h-0.5 bg-white"
+                ></span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="mobile-menu md:hidden bg-slate-900 border-t border-slate-800"
+      >
+        <div class="flex flex-col p-4 space-y-2">
+          <a
+            href="index.html"
+            class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
+            >About Us</a
+          >
+          <a
+            href="packages.html"
+            class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
+            >Detailing Packages</a
+          >
+          <a
+            href="correction.html"
+            class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
+            >Paint Correction</a
+          >
+          <a
+            href="book.html"
+            class="block py-3 px-4 rounded-lg text-sm font-bold text-white bg-orange-600 text-center mt-4 shadow-lg active:scale-95 transition"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="relative pt-40 pb-16 bg-slate-950 border-b border-slate-800 text-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="images/interior.webp" alt="Detailing Packages" class="w-full h-full object-cover opacity-20" />
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/80 to-slate-950"></div>
+      </div>
+      <div class="relative z-10">
+        <p class="text-orange-500 font-bold text-xs uppercase tracking-[0.5em] mb-3">Winnipeg • St. Adolphe • Île-des-Chênes</p>
+        <h1 class="text-5xl md:text-7xl font-black italic uppercase tracking-tighter mb-4">Detailing <span class="text-orange-500">Packages</span></h1>
+        <div class="w-16 h-1 bg-orange-500 mx-auto"></div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 py-10">
+
+      <div
+        class="w-full h-64 rounded-2xl overflow-hidden mb-12 relative border border-slate-700"
+      >
+        <img
+          src="images/interior.webp"
+          alt="Interior Detail"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-black/50 flex items-center justify-center"
+        >
+          <h2 class="text-2xl font-bold uppercase tracking-widest text-white">
+            Restore Your Ride
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition duration-300"
+        >
+          <h3 class="text-xl font-bold mb-2">Gold Wash Package</h3>
+          <p class="text-3xl font-black text-orange-500 mb-6">
+            $100<span class="text-sm text-gray-400">+</span>
+          </p>
+          <ul class="space-y-3 text-gray-300">
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Wheel clean
+            </li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Full contact foam
+              wash
+            </li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Towel dry with
+              ceramic booster
+            </li>
+            <li><i class="fas fa-check text-orange-500 mr-2"></i>Windows</li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition duration-300"
+        >
+          <h3 class="text-xl font-bold mb-2">Decon Wash Package</h3>
+          <p class="text-3xl font-black text-orange-500 mb-6">
+            $115<span class="text-sm text-gray-400">+</span>
+          </p>
+          <ul class="space-y-3 text-gray-300">
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Chemical/physical
+              removal of contaminants
+            </li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Tar, Iron, and
+              Tree Sap removal
+            </li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Deep exterior
+              clean
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition duration-300"
+        >
+          <h3 class="text-xl font-bold mb-2">Basic Detail Package</h3>
+          <p class="text-3xl font-black text-orange-500 mb-6">
+            $120<span class="text-sm text-gray-400">+</span>
+          </p>
+          <ul class="space-y-3 text-gray-300">
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Basic exterior
+              wash
+            </li>
+            <li><i class="fas fa-check text-orange-500 mr-2"></i>Vacuum</li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Interior wipe
+              down (disinfectant spray)
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="bg-gradient-to-b from-slate-700 to-slate-800 p-8 rounded-2xl border-2 border-orange-500 relative shadow-2xl shadow-orange-500/10"
+        >
+          <div
+            class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg"
+          >
+            BEST VALUE
+          </div>
+          <h3 class="text-xl font-bold mb-2">
+            Full L<span style="color: orange">2</span>S Package
+          </h3>
+          <p class="text-3xl font-black text-orange-500 mb-6">
+            $320<span class="text-sm text-gray-400">+</span>
+          </p>
+          <ul class="space-y-3 text-gray-300 mb-8">
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Wheel clean &
+              Engine bay degrease
+            </li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Full contact foam
+              wash & Towel dry
+            </li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Vacuum & Full
+              Tornado
+            </li>
+            <li>
+              <i class="fas fa-check text-orange-500 mr-2"></i>Interior degrease
+              & Windows
+            </li>
+          </ul>
+          <a
+            href="book.html"
+            class="block text-center w-full bg-orange-600 hover:bg-orange-700 py-3 rounded-lg font-bold transition shadow-lg"
+            >Book Full Detail</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-slate-950 py-10 border-t border-slate-900 mt-auto">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="font-black text-2xl tracking-tighter text-white mb-4">
+          <span class="text-blue-500"
+            >LAND<span class="accent-orange">2</span>SEA</span
+          >
+          DETAILING
+        </div>
+        <div class="flex justify-center space-x-8 mb-8">
+          <a
+            href="https://www.facebook.com/land2sea.detailing"
+            target="_blank"
+            class="text-gray-500 hover:text-blue-500 text-2xl transition"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/land2sea.detailing"
+            target="_blank"
+            class="text-gray-500 hover:text-orange-500 text-2xl transition"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-gray-600 text-sm">
+          © 2026 Land2Sea Detailing. Winnipeg, MB.
+        </p>
+      </div>
+    </footer>
+    <!-- Floating Book Button -->
+    <a href="book.html" class="float-btn bg-orange-600 hover:bg-orange-500 text-white px-5 py-3 rounded-full font-bold uppercase text-xs tracking-wider shadow-xl shadow-orange-500/40 flex items-center gap-2 transition">
+      <i class="fas fa-calendar-check"></i> Book Now
+    </a>
+    <script>(function(){var fb=document.querySelector('.float-btn');if(fb)window.addEventListener('scroll',function(){fb.classList.toggle('visible',window.scrollY>300);});})();</script>
+  </body>
+</html>

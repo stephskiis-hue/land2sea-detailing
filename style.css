@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+:root {
+    /* --- COLOR PALETTE --- */
+    --l2s-blue: #3B82F6;
+    --l2s-orange: #F97316; /* New Vibrant Orange */
+    
+    /* Glows */
+    --glow-blue: rgba(59, 130, 246, 0.5);
+    --glow-orange: rgba(249, 115, 22, 0.5);
+    
+    /* Backgrounds */
+    --dark-bg: #0f172a; /* Deep Blue Slate */
+    --card-bg: #1e293b; /* Lighter Blue Slate */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-bg);
+    color: #f3f4f6;
+    overflow-x: hidden;
+}
+
+/* --- LOGO ACCENT (Apply this class to the "2") --- */
+.accent-orange {
+    color: var(--l2s-orange);
+}
+
+/* --- 1. SMOOTH SCROLLING & SCROLLBAR --- */
+html { scroll-behavior: smooth; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--dark-bg); }
+::-webkit-scrollbar-thumb { 
+    background: #334155; 
+    border-radius: 5px; 
+    border: 2px solid var(--dark-bg); 
+}
+/* Scrollbar turns Orange on hover */
+::-webkit-scrollbar-thumb:hover { background: var(--l2s-orange); }
+
+/* --- 2. GLASS NAVIGATION --- */
+.glass-nav {
+    background-color: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* --- 3. MOBILE MENU --- */
+.mobile-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+.mobile-menu.active {
+    max-height: 500px;
+    opacity: 1;
+}
+
+/* Hamburger Icon Animation */
+.hamburger-line {
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+    background-color: #fff; /* Default white */
+}
+/* Icon turns Orange when open */
+.menu-open .hamburger-line { background-color: var(--l2s-orange); }
+.menu-open .line-1 { transform: translateY(8px) rotate(45deg); }
+.menu-open .line-2 { opacity: 0; }
+.menu-open .line-3 { transform: translateY(-8px) rotate(-45deg); }
+
+/* --- 4. INTERACTIVE CARDS (Orange Neon Glow) --- */
+.interactive-card {
+    background: var(--card-bg);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.interactive-card:hover {
+    transform: translateY(-10px);
+    /* Dual colored shadow: Dark shadow + Orange Glow */
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.5), 0 0 15px var(--glow-orange);
+    border-color: var(--l2s-orange);
+}
+
+/* --- 5. BUTTON SHEEN EFFECT --- */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+.btn-shine::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* Added a slight orange tint to the sheen */
+    background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.2), transparent);
+    transition: 0.5s;
+}
+.btn-shine:hover::after {
+    left: 100%;
+}
+
+/* --- 6. IMAGE ZOOM EFFECT --- */
+.img-zoom-container {
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.img-zoom {
+    transition: transform 0.7s ease;
+}
+.img-zoom-container:hover .img-zoom {
+    transform: scale(1.1);
+}
+
+/* --- 7. SCROLL REVEAL ANIMATIONS --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SMART RESPONSIVE LOCATION TAG */
+.location-text {
+    /* Changed from Blue-400 to Orange for contrast against the blue bg */
+    color: var(--l2s-orange); 
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap; 
+    margin-bottom: 1rem;
+    
+    font-size: clamp(9px, 3.5vw, 13px); 
+    letter-spacing: 0.5px; 
+}
+
+/* DESKTOP (Screens wider than 768px) */
+@media (min-width: 768px) {
+    .location-text {
+        font-size: 0.875rem; 
+        letter-spacing: 0.2em; 
+    }
+}
+
+
+/* Glass Navigation Effect */
+.glass-nav {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Accent Color */
+.accent-orange {
+    color: #f97316; /* Tailwind orange-500 */
+}
+
+/* Dark Mode Map Filter */
+.dark-map iframe {
+    filter: grayscale(100%) invert(90%) hue-rotate(180deg) brightness(90%) contrast(90%);
+}
+
+/* Page Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Shine Effect for Buttons */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-shine::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(30deg);
+    transition: all 0.5s;
+}
+
+.btn-shine:hover::after {
+    left: 120%;
+}
+
+/* Force the main container to stack items vertically */
+main {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure the card takes up the full width available in its container */
+.max-w-lg {
+    width: 100%;
+}
+
+/* Enhanced Dark Map Filter - Keeps colors rich but dark */
+.dark-map iframe {
+    /* Inverts colors to dark mode, fixes the hue, and boosts color saturation */
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(105%) saturate(150%);
+    transition: filter 0.5s ease-in-out, transform 0.7s ease;
+}
+
+/* Makes the map colors pop even more when you hover over it */
+.dark-map:hover iframe {
+    filter: invert(100%) hue-rotate(180deg) brightness(100%) contrast(110%) saturate(200%);
+}
+/* --- ENHANCED INTERACTIVE CARDS --- */
+.interactive-card {
+    background: rgba(30, 41, 59, 0.4) !important; /* Glass effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.interactive-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    background: rgba(30, 41, 59, 0.7) !important;
+    border-color: var(--l2s-orange);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), 
+                0 0 20px rgba(249, 115, 22, 0.2);
+}
+
+/* Adds a small orange bar at the bottom of cards on hover */
+.interactive-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: var(--l2s-orange);
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+.interactive-card:hover::after {
+    width: 40%;
+}
+
+/* Styling for the Quote Icon */
+.fa-quote-left {
+    filter: drop-shadow(0 0 8px var(--glow-orange));
+}
+
+/* Base state: Hidden and slightly shifted down */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+/* Active state: Visible and in position (Triggered by JS) */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  max-height: 500px; /* Adjust based on menu height */
+}
+
+@keyframes pulse-slow {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(234, 88, 12, 0.4); }
+  50% { transform: scale(1.05); box-shadow: 0 0 30px rgba(234, 88, 12, 0.6); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
+}
+
+
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; text-shadow: 0 0 5px rgba(249, 115, 22, 0.4); }
+  50% { opacity: 0.8; text-shadow: 0 0 15px rgba(249, 115, 22, 0.8); }
+}
+.animate-pulse {
+  animation: pulse-glow 3s infinite ease-in-out;
+}
