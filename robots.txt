@@ -12,4 +12,4 @@ Disallow: /
 User-agent: SemrushBot
 Disallow: /
 
-Sitemap: https://land2seadetailing.com/sitemap.xml
+Sitemap: https://www.land2sea-detailing.com/sitemap.xml

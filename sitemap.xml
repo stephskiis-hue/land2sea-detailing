@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://land2seadetailing.com/</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://www.land2sea-detailing.com/</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://land2seadetailing.com/about.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://www.land2sea-detailing.com/about</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://land2seadetailing.com/packages.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://www.land2sea-detailing.com/packages</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://land2seadetailing.com/correction.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://www.land2sea-detailing.com/correction</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://land2seadetailing.com/book.html</loc>
-    <lastmod>2026-03-10</lastmod>
+    <loc>https://www.land2sea-detailing.com/book</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.land2sea-detailing.com/faq</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.land2sea-detailing.com/service-area</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detailing Packages | Land2Sea Winnipeg</title>
-    <meta name="description" content="Land2Sea Detailing packages — Gold Wash ($100+), Decon Wash ($115+), Basic Detail ($120+), and Full L2S Package ($320+). Serving Winnipeg, St. Adolphe & Île-des-Chênes." />
+    <title>Detailing Packages | Land2Sea Winnipeg — Pricing &amp; Services</title>
+    <meta name="description" content="View Land2Sea Detailing packages — Gold Wash, Decon Wash, Basic Detail, and Full L2S. Transparent pricing for Winnipeg car detailing. Book online today." />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://land2seadetailing.com/packages.html" />
+    <link rel="canonical" href="https://www.land2sea-detailing.com/packages" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Detailing Packages | Land2Sea Winnipeg" />
-    <meta property="og:description" content="From a Gold Wash to the full L2S Detail Package — we have a service for every vehicle and every budget." />
-    <meta property="og:url" content="https://land2seadetailing.com/packages.html" />
-    <meta property="og:image" content="https://land2seadetailing.com/images/interior.webp" />
+    <meta property="og:title" content="Detailing Packages | Land2Sea Winnipeg — Pricing &amp; Services" />
+    <meta property="og:description" content="View Land2Sea Detailing packages — Gold Wash, Decon Wash, Basic Detail, and Full L2S. Transparent pricing for Winnipeg car detailing. Book online today." />
+    <meta property="og:url" content="https://www.land2sea-detailing.com/packages" />
+    <meta property="og:image" content="https://www.land2sea-detailing.com/images/interior.webp" />
     <link rel="apple-touch-icon" href="images/favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,7 +29,7 @@
   <body class="bg-slate-900 text-white">
     <!-- Promo Banner -->
     <div id="promoBanner" class="promo-banner text-white text-xs md:text-sm font-bold uppercase tracking-widest text-center py-2 px-12 relative">
-      <span>&#127774; Spring Special — Book any Full Detail and save $20. Limited spots. <a href="book.html" class="underline ml-1">Book Now</a></span>
+      <span>&#127774; Spring Special — Book any Full Detail and save $20. Limited spots. <a href="/book" class="underline ml-1">Book Now</a></span>
       <button onclick="dismissPromo()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition text-xl leading-none" aria-label="Close">&times;</button>
     </div>
     <script>if(localStorage.getItem('promoDismissed'))document.getElementById('promoBanner').style.display='none';function dismissPromo(){document.getElementById('promoBanner').style.display='none';localStorage.setItem('promoDismissed','1');}</script>
@@ -37,7 +37,7 @@
       <div class="max-w-7xl mx-auto px-4">
         <div class="flex justify-between items-center h-20">
           <a
-            href="index.html"
+            href="/"
             class="font-black text-2xl tracking-tighter text-white"
           >
             <span class="text-blue-500"
@@ -48,27 +48,27 @@
 
           <div class="hidden md:flex space-x-8 items-center">
             <a
-              href="index.html"
+              href="/"
               class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
               >Home</a
             >
             <a
-              href="about.html"
+              href="/about"
               class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
               >About Us</a
             >
             <a
-              href="packages.html"
+              href="/packages"
               class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
               >Packages</a
             >
             <a
-              href="correction.html"
+              href="/correction"
               class="text-white hover:text-orange-500 font-bold text-sm uppercase transition"
               >Correction</a
             >
             <a
-              href="book.html"
+              href="/book"
               class="btn-shine bg-orange-600 hover:bg-orange-500 text-white px-6 py-2 rounded-full font-bold uppercase text-xs tracking-wider shadow-lg shadow-orange-500/30 transition transform hover:scale-105"
               >Book Now</a
             >
@@ -104,27 +104,27 @@
       >
         <div class="flex flex-col p-4 space-y-2">
           <a
-            href="index.html"
+            href="/"
             class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
             >Home</a
           >
           <a
-            href="about.html"
+            href="/about"
             class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
             >About Us</a
           >
           <a
-            href="packages.html"
+            href="/packages"
             class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
             >Detailing Packages</a
           >
           <a
-            href="correction.html"
+            href="/correction"
             class="block py-3 px-4 rounded-lg text-sm font-bold text-white hover:bg-orange-600/20 hover:text-orange-500 transition"
             >Paint Correction</a
           >
           <a
-            href="book.html"
+            href="/book"
             class="block py-3 px-4 rounded-lg text-sm font-bold text-white bg-orange-600 text-center mt-4 shadow-lg active:scale-95 transition"
             >Book Now</a
           >
@@ -153,6 +153,7 @@
           src="images/interior.webp"
           alt="Interior Detail"
           class="w-full h-full object-cover"
+          loading="lazy"
         />
         <div
           class="absolute inset-0 bg-black/50 flex items-center justify-center"
@@ -263,7 +264,7 @@
             </li>
           </ul>
           <a
-            href="book.html"
+            href="/book"
             class="block text-center w-full bg-orange-600 hover:bg-orange-700 py-3 rounded-lg font-bold transition shadow-lg"
             >Book Full Detail</a
           >
@@ -299,9 +300,63 @@
       </div>
     </footer>
     <!-- Floating Book Button -->
-    <a href="book.html" class="float-btn bg-orange-600 hover:bg-orange-500 text-white px-5 py-3 rounded-full font-bold uppercase text-xs tracking-wider shadow-xl shadow-orange-500/40 flex items-center gap-2 transition">
+    <a href="/book" class="float-btn bg-orange-600 hover:bg-orange-500 text-white px-5 py-3 rounded-full font-bold uppercase text-xs tracking-wider shadow-xl shadow-orange-500/40 flex items-center gap-2 transition">
       <i class="fas fa-calendar-check"></i> Book Now
     </a>
     <script>(function(){var fb=document.querySelector('.float-btn');if(fb)window.addEventListener('scroll',function(){fb.classList.toggle('visible',window.scrollY>300);});})();</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Land2Sea Detailing Packages",
+  "description": "Car detailing service packages in Winnipeg, MB",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Gold Wash Package",
+        "description": "Premium exterior wash and detailing package",
+        "provider": { "@type": "LocalBusiness", "name": "Land2Sea Detailing" },
+        "offers": { "@type": "Offer", "priceCurrency": "CAD", "price": "100", "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": "100" } }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "Decon Wash Package",
+        "description": "Full decontamination wash to remove iron deposits, tar, and fallout",
+        "provider": { "@type": "LocalBusiness", "name": "Land2Sea Detailing" },
+        "offers": { "@type": "Offer", "priceCurrency": "CAD" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "Basic Detail Package",
+        "description": "Interior and exterior basic detail service",
+        "provider": { "@type": "LocalBusiness", "name": "Land2Sea Detailing" },
+        "offers": { "@type": "Offer", "priceCurrency": "CAD" }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "Full L2S Package",
+        "description": "The complete Land2Sea full detail — interior reset, exterior decon wash, and paint enhancement",
+        "provider": { "@type": "LocalBusiness", "name": "Land2Sea Detailing" },
+        "offers": { "@type": "Offer", "priceCurrency": "CAD" }
+      }
+    }
+  ]
+}
+</script>
   </body>
 </html>
