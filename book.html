@@ -245,52 +245,19 @@
           <p class="text-orange-500 font-bold text-xs uppercase tracking-[0.4em] mb-1">Free Quote</p>
           <h3 class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-white mb-6">Tell Us About Your Ride</h3>
 
-          <form action="contact.php" method="POST" class="space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Your Name <span class="text-orange-500">*</span></label>
-                <input type="text" name="name" required placeholder="John Smith" class="w-full bg-slate-800 border border-slate-700 focus:border-orange-500 text-white placeholder-gray-600 rounded-lg px-4 py-3 text-sm outline-none transition" />
-              </div>
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Email <span class="text-orange-500">*</span></label>
-                <input type="email" name="email" required placeholder="you@email.com" class="w-full bg-slate-800 border border-slate-700 focus:border-orange-500 text-white placeholder-gray-600 rounded-lg px-4 py-3 text-sm outline-none transition" />
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Phone</label>
-                <input type="tel" name="phone" placeholder="204-xxx-xxxx" class="w-full bg-slate-800 border border-slate-700 focus:border-orange-500 text-white placeholder-gray-600 rounded-lg px-4 py-3 text-sm outline-none transition" />
-              </div>
-              <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Service</label>
-                <select name="service" class="w-full bg-slate-800 border border-slate-700 focus:border-orange-500 text-white rounded-lg px-4 py-3 text-sm outline-none transition">
-                  <option value="">Select a service…</option>
-                  <option>Full Interior Detail</option>
-                  <option>Exterior Wash &amp; Polish</option>
-                  <option>Full Detail (Interior + Exterior)</option>
-                  <option>Paint Correction</option>
-                  <option>Ceramic Coating</option>
-                  <option>Engine Bay Clean</option>
-                  <option>Not sure — just want a quote</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Vehicle (Year, Make, Model)</label>
-              <input type="text" name="vehicle" placeholder="e.g. 2019 Subaru WRX" class="w-full bg-slate-800 border border-slate-700 focus:border-orange-500 text-white placeholder-gray-600 rounded-lg px-4 py-3 text-sm outline-none transition" />
-            </div>
-
-            <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-1">Any Details or Questions?</label>
-              <textarea name="message" rows="3" placeholder="Tell us anything helpful — condition of the car, specific concerns, etc." class="w-full bg-slate-800 border border-slate-700 focus:border-orange-500 text-white placeholder-gray-600 rounded-lg px-4 py-3 text-sm outline-none transition resize-none"></textarea>
-            </div>
-
-            <button type="submit" class="w-full bg-orange-600 hover:bg-orange-500 text-white font-bold uppercase tracking-wider py-4 rounded-xl transition transform hover:scale-[1.02] shadow-lg shadow-orange-500/30 text-sm">
-              <i class="fas fa-paper-plane mr-2"></i>Send My Request
-            </button>
-          </form>
+          <iframe
+            id="JotFormIFrame-260467480192258"
+            title="Land2sea"
+            onload="window.parent.scrollTo(0,0)"
+            allowtransparency="true"
+            allow="geolocation; microphone; camera; fullscreen; payment"
+            src="https://form.jotform.com/260467480192258"
+            frameborder="0"
+            style="min-width:100%;max-width:100%;height:539px;border:none;"
+            scrolling="no"
+          ></iframe>
+          <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+          <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-260467480192258']", "https://form.jotform.com/")</script>
 
           <p class="text-gray-600 text-xs text-center mt-4">We respond within 24 hours — usually much faster.</p>
         </div>
@@ -326,29 +293,8 @@
     </footer>
 
     <!-- Success / Error Toast -->
-    <div id="toastMsg" class="fixed top-24 left-1/2 -translate-x-1/2 z-[200] hidden px-6 py-4 rounded-xl shadow-2xl text-sm font-bold uppercase tracking-wider transition-all duration-300 opacity-0 text-center max-w-xs"></div>
 
-    <script>
-      // Show success or error toast based on URL param
-      (function() {
-        const params = new URLSearchParams(window.location.search);
-        const toast = document.getElementById('toastMsg');
-        if (params.get('sent') === '1') {
-          toast.textContent = '✓ Message sent! We\'ll be in touch soon.';
-          toast.className = toast.className.replace('hidden', '');
-          toast.classList.add('bg-green-600', 'text-white');
-          setTimeout(() => toast.classList.remove('opacity-0'), 50);
-          setTimeout(() => { toast.classList.add('opacity-0'); setTimeout(() => toast.classList.add('hidden'), 400); }, 5000);
-          history.replaceState(null, '', 'book.html');
-        } else if (params.get('error') === '1') {
-          toast.textContent = '✗ Something went wrong. Please call or text us.';
-          toast.className = toast.className.replace('hidden', '');
-          toast.classList.add('bg-red-600', 'text-white');
-          setTimeout(() => toast.classList.remove('opacity-0'), 50);
-          setTimeout(() => { toast.classList.add('opacity-0'); setTimeout(() => toast.classList.add('hidden'), 400); }, 6000);
-          history.replaceState(null, '', 'book.html');
-        }
-      })();
+<script>
 
       const modal = document.getElementById("contactModal");
       const modalBox = document.getElementById("modalBox");
